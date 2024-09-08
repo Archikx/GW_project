@@ -1,0 +1,31 @@
+<!-- Создай страницу для вывода информации пользователя -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <ul class="header">
+        <li class="header__text">
+            <h1>Спасибо за заполнение формы!</h1>
+            <p>Ваше имя: {{ name }}</p>
+            <p>Ваша электронная почта: {{ email }}</p>
+            <p>Сообщение получено</p>
+        </li>
+    </ul>
+    <footer>
+        <nav> <!-- Navigation menu -->
+          <ul>
+              <li class="header_2">
+                <a href="/">Home</a>
+              </li>
+          </ul>
+        </nav>
+      </footer>
+    {% endblock %}
+</body>
+</html>
